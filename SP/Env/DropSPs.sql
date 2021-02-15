@@ -1,13 +1,4 @@
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'Zagros'
-    AND SPECIFIC_NAME = N'DropSPs'
-    AND ROUTINE_TYPE = N'PROCEDURE'
-)
-DROP PROCEDURE Zagros.DropSPs
-GO
-CREATE PROCEDURE Zagros.DropSPs
+CREATE OR ALTER PROCEDURE Zagros.DropSPs
 AS
 /***************************************************************************************************
 File: DropSPs.sql

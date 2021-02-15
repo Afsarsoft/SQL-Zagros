@@ -1,13 +1,4 @@
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'Zagros'
-    AND SPECIFIC_NAME = N'InsertOrderDetail'
-    AND ROUTINE_TYPE = N'PROCEDURE'
-)
-DROP PROCEDURE Zagros.InsertOrderDetail
-GO
-CREATE PROCEDURE Zagros.InsertOrderDetail
+CREATE OR ALTER PROCEDURE Zagros.InsertOrderDetail
     @OrderID INT,
     @LocationID TINYINT,
     @PackageID  TINYINT,

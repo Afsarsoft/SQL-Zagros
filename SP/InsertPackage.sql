@@ -1,13 +1,4 @@
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'Zagros'
-    AND SPECIFIC_NAME = N'InsertPackage'
-    AND ROUTINE_TYPE = N'PROCEDURE'
-)
-DROP PROCEDURE Zagros.InsertPackage
-GO
-CREATE PROCEDURE Zagros.InsertPackage
+CREATE OR ALTER PROCEDURE Zagros.InsertPackage
     @Name       NVARCHAR(50),
     @UnitPrice  MONEY,
     @Note       NVARCHAR(50) = NULL

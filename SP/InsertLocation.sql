@@ -1,13 +1,4 @@
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'Zagros'
-    AND SPECIFIC_NAME = N'InsertLocation'
-    AND ROUTINE_TYPE = N'PROCEDURE'
-)
-DROP PROCEDURE Zagros.InsertLocation
-GO
-CREATE PROCEDURE Zagros.InsertLocation
+CREATE OR ALTER PROCEDURE Zagros.InsertLocation
     @Name       NVARCHAR(50)
 AS
 /***************************************************************************************************

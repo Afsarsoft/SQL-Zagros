@@ -1,13 +1,4 @@
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'Zagros'
-    AND SPECIFIC_NAME = N'FindOrderByCustomerID'
-    AND ROUTINE_TYPE = N'PROCEDURE'
-)
-DROP PROCEDURE Zagros.FindOrderByCustomerID
-GO
-CREATE PROCEDURE Zagros.FindOrderByCustomerID
+CREATE OR ALTER PROCEDURE Zagros.FindOrderByCustomerID
     @CustomerID INT
 AS
 /***************************************************************************************************

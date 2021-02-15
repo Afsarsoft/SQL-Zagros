@@ -1,13 +1,4 @@
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'Zagros'
-    AND SPECIFIC_NAME = N'CreateParameterTable'
-    AND ROUTINE_TYPE = N'PROCEDURE'
-)
-DROP PROCEDURE Zagros.CreateParameterTable
-GO
-CREATE PROCEDURE Zagros.CreateParameterTable
+CREATE OR ALTER PROCEDURE Zagros.CreateParameterTable
 AS
 /***************************************************************************************************
 File: CreateParameterTable.sql

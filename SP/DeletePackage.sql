@@ -1,13 +1,4 @@
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'Zagros'
-   AND SPECIFIC_NAME = N'DeletePackage'
-   AND ROUTINE_TYPE = N'PROCEDURE'
-)
-DROP PROCEDURE Zagros.DeletePackage
-GO
-CREATE PROCEDURE Zagros.DeletePackage
+CREATE OR ALTER PROCEDURE Zagros.DeletePackage
    @PackageID TINYINT
 AS
 /***************************************************************************************************

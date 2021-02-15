@@ -1,13 +1,4 @@
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'Zagros'
-    AND SPECIFIC_NAME = N'InsertCustomer'
-    AND ROUTINE_TYPE = N'PROCEDURE'
-)
-DROP PROCEDURE Zagros.InsertCustomer
-GO
-CREATE PROCEDURE Zagros.InsertCustomer
+CREATE OR ALTER PROCEDURE Zagros.InsertCustomer
     @CustomerID INT,
     @CountryID  TINYINT,
     @Email      NVARCHAR(50),

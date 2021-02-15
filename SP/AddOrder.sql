@@ -1,13 +1,4 @@
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'Zagros'
-    AND SPECIFIC_NAME = N'AddOrder'
-    AND ROUTINE_TYPE = N'PROCEDURE'
-)
-DROP PROCEDURE Zagros.AddOrder
-GO
-CREATE PROCEDURE Zagros.AddOrder
+CREATE OR ALTER PROCEDURE Zagros.AddOrder
 AS
 /***************************************************************************************************
 File: AddOrder.sql

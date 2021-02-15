@@ -7,7 +7,7 @@ WHERE SPECIFIC_SCHEMA = N'Zagros'
 )
 DROP PROCEDURE Zagros.GetMaxLocationID
 GO
-CREATE PROCEDURE Zagros.GetMaxLocationID
+CREATE OR ALTER PROCEDURE Zagros.GetMaxLocationID
     @MaxLocationID TINYINT OUTPUT
 AS
 

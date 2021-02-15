@@ -1,13 +1,4 @@
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'Zagros'
-  AND SPECIFIC_NAME = N'CreateFKs'
-  AND ROUTINE_TYPE = N'PROCEDURE'
-)
-DROP PROCEDURE Zagros.CreateFKs
-GO
-CREATE PROCEDURE Zagros.CreateFKs
+CREATE OR ALTER PROCEDURE Zagros.CreateFKs
 AS
 /***************************************************************************************************
 File: CreateFKs.sql

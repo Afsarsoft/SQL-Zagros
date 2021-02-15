@@ -7,7 +7,7 @@ WHERE SPECIFIC_SCHEMA = N'Zagros'
 )
 DROP PROCEDURE Zagros.GetMaxCustomerID
 GO
-CREATE PROCEDURE Zagros.GetMaxCustomerID
+CREATE OR ALTER PROCEDURE Zagros.GetMaxCustomerID
     @MaxCustomerID INT OUTPUT
 AS
 

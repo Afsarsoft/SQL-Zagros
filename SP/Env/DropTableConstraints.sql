@@ -1,13 +1,4 @@
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'Zagros'
-  AND SPECIFIC_NAME = N'DropTableConstraints'
-  AND ROUTINE_TYPE = N'PROCEDURE'
-)
-DROP PROCEDURE Zagros.DropTableConstraints
-GO
-CREATE PROCEDURE Zagros.DropTableConstraints
+CREATE OR ALTER PROCEDURE Zagros.DropTableConstraints
 AS
 /***************************************************************************************************
 File: DropTableConstraints.sql

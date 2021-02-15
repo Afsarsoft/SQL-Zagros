@@ -1,13 +1,4 @@
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'Zagros'
-   AND SPECIFIC_NAME = N'FindCustomerByEmail'
-   AND ROUTINE_TYPE = N'PROCEDURE'
-)
-DROP PROCEDURE Zagros.FindCustomerByEmail
-GO
-CREATE PROCEDURE Zagros.FindCustomerByEmail
+CREATE OR ALTER PROCEDURE Zagros.FindCustomerByEmail
    @Email NVARCHAR(50)
 AS
 /***************************************************************************************************

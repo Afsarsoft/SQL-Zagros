@@ -1,13 +1,4 @@
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'Zagros'
-   AND SPECIFIC_NAME = N'DeleteCustomer'
-   AND ROUTINE_TYPE = N'PROCEDURE'
-)
-DROP PROCEDURE Zagros.DeleteCustomer
-GO
-CREATE PROCEDURE Zagros.DeleteCustomer
+CREATE OR ALTER PROCEDURE Zagros.DeleteCustomer
    @CustomerID INT
 AS
 /***************************************************************************************************

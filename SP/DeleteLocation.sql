@@ -1,13 +1,4 @@
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'Zagros'
-   AND SPECIFIC_NAME = N'DeleteLocation'
-   AND ROUTINE_TYPE = N'PROCEDURE'
-)
-DROP PROCEDURE Zagros.DeleteLocation
-GO
-CREATE PROCEDURE Zagros.DeleteLocation
+CREATE OR ALTER PROCEDURE Zagros.DeleteLocation
    @LocationID INT
 AS
 /***************************************************************************************************
