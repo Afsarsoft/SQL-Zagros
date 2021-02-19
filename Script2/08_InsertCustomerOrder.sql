@@ -34,10 +34,10 @@ EXEC Zagros.InsertHistory @SP = @SP,
 SET @ErrorText = 'Failed INSERT table CustomerOrder table.';
 
 INSERT INTO Zagros.CustomerOrder
-    (Email, LocationID, PackageID, UnitPrice, Quantity, Note)
+   (Email, LocationID, PackageID, UnitPrice, Quantity, Note)
 VALUES
-    ('100001051@xyz.com', 01, 01, 500, 1, 'Test Note 1'),
-    ('100001051@xyz.com', 02, 04, 60, 2, 'Test Note 2')
+   ('100000051@xyz.com', 01, 01, 500, 1, 'Test Note 1'),
+   ('100000051@xyz.com', 02, 04, 60, 2, 'Test Note 2')
 
 SET @Message = CONVERT(VARCHAR(10), @@ROWCOUNT) + ' rows effected. Completed INSERT to table CustomerOrder';   
 RAISERROR (@Message, 0,1) WITH NOWAIT;
