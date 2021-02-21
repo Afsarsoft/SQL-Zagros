@@ -15,23 +15,18 @@ Date(yyyy-mm-dd)    Author              Comments
 INSERT INTO Zagros.CustomerOrder
     (Email, LocationID, PackageID, UnitPrice, Quantity, Note)
 VALUES
-    ('100001051@xyz.com', 01, 01, 500, 1, 'Test Note 1'),
-    ('100001051@xyz.com', 02, 04, 60, 2, 'Test Note 2')
+    ('100000051@xyz.com', 01, 01, 500, 1, 'Test Note 1'),
+    ('100000051@xyz.com', 02, 04, 60, 2, 'Test Note 2')
 
 INSERT INTO Zagros.CustomerOrder
     (Email, LocationID, PackageID, UnitPrice, Quantity, Note)
 VALUES
-    ('100001001@xyz.com', 01, 01, 500, 1, 'Test Note 1')
-
-INSERT INTO Zagros.CustomerOrder
-    (Email, LocationID, PackageID, UnitPrice, Quantity, Note)
-VALUES
-    ('100001052@xyz.com', 01, 01, 500, 1, 'Test Note 1'),
-    ('100001052@xyz.com', 02, 05, 50, 2, 'Test Note 2'),
-    ('100001052@xyz.com', 02, 04, 60, 1, 'Test Note 2')
+    ('100000050@xyz.com', 01, 01, 500, 1, 'Test Note 1'),
+    ('100000050@xyz.com', 02, 04, 60, 2, 'Test Note 2')
 
 SELECT *
-FROM Zagros.Customer;
+FROM Zagros.Customer
+ORDER BY CustomerID DESC;
 
 SELECT *
 FROM Zagros.CustomerOrder;

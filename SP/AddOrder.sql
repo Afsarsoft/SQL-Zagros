@@ -65,12 +65,22 @@ DECLARE @CUstomerOrder TABLE (
     Note NVARCHAR(250) NULL);
 
 BEGIN TRY;
+SET @RowsToProcess = 0;
+SET @CurrentRow = 0;
 SET @RowCount = 0;
 SET @NoEmail = 0;
 SET @TotalAmount = 0;
 SET @TotalTotalAmount = 0;
+SET @CustomerID = 0;
+SET @OrderID = 0;
 SET @CountryID_TBD = 255;
 SET @ErrorText = 'Unexpected ERROR in setting the variables!';
+SET @Email = '';
+SET @LocationID = 0;
+SET @PackageID = 0;
+SET @UnitPrice = 0;
+SET @Quantity = 0;
+SET @Note = '';
 
 SET @SP = OBJECT_NAME(@@PROCID);
 SET @StartTime = GETDATE();

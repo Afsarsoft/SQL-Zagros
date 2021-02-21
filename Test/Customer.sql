@@ -38,8 +38,10 @@ EXEC Zagros.InsertCustomer
      @Note = 'XYZ ?????? ??????'
 
 -- Testing DELETE Customer
-EXEC Zagros.DeleteCustomer @CustomerID = 100001051
-EXEC Zagros.DeleteCustomer @CustomerID = 100001052
+EXEC Zagros.DeleteCustomer @CustomerID = 100000051
+EXEC Zagros.DeleteCustomer @CustomerID = 100000052
+EXEC Zagros.DeleteCustomer @CustomerID = 100000053
+EXEC Zagros.DeleteCustomer @CustomerID = 100000054
 
 SELECT *
 FROM Zagros.History

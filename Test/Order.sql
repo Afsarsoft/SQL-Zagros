@@ -66,15 +66,11 @@ FROM Zagros.[Order]
 SELECT *
 FROM Zagros.OrderDetail
 
-EXEC Zagros.UpdateOrder  @OrderID = 100001001,
-    @CustomerID = 100001002,
+EXEC Zagros.UpdateOrder  @OrderID = 100000001,
+    @CustomerID = 100000002,
     @OrderStatusID = 1,
     @OrderDate     = '2019/08/25',
     @FinalDate     = NULL,
-    @TotalAmount   = 6000,
     @Note          = 'Some stuff';
 
-
--- Work on UpdateOrderDetail
-
-
+-- We should not update OrderDetail

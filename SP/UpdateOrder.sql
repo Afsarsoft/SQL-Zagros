@@ -4,7 +4,6 @@ CREATE OR ALTER PROCEDURE Zagros.UpdateOrder
     @OrderStatusID  TINYINT = NULL,
     @OrderDate      DATETIME = NULL,
     @FinalDate      DATETIME = NULL,
-    @TotalAmount    MONEY = NULL,
     @Note           NVARCHAR(250) = NULL
 AS
 /***************************************************************************************************
@@ -24,7 +23,6 @@ Parameter(s):   @OrderID
                 @OrderStatusID NULL
                 @OrderDate     NULL
                 @FinalDate     NULL
-                @TotalAmount   NULL
                 @Note          NULL
 
 Usage:          EXEC Zagros.UpdateOrder @OrderID = 100001001,
@@ -32,7 +30,6 @@ Usage:          EXEC Zagros.UpdateOrder @OrderID = 100001001,
                                         @OrderStatusID = 1,
                                         @OrderDate     = '2019/08/25',
                                         @FinalDate     = NULL,
-                                        @TotalAmount   = 6000,
                                         @Note          = 'Some stuff';
 ****************************************************************************************************
 SUMMARY OF CHANGES
@@ -45,7 +42,9 @@ DECLARE @ErrorText   VARCHAR(MAX),
         @Message     VARCHAR(255),    
         @StartTime   DATETIME,
         @SP          VARCHAR(50),
-        @RowCount    INT;
+        @RowCount    INT,
+        
+        @TotalAmount MONEY;
 
 BEGIN TRY;   
 SET @ErrorText = 'Unexpected ERROR in setting the variables!';
@@ -53,7 +52,9 @@ SET @ErrorText = 'Unexpected ERROR in setting the variables!';
 SET @RowCount = 0;
 SET @SP = OBJECT_NAME(@@PROCID);
 SET @StartTime = GETDATE();
-    
+
+SET @TotalAmount = 0;
+   
 SET @Message = 'Started SP ' + @SP + ' at ' + FORMAT(@StartTime , 'MM/dd/yyyy HH:mm:ss');   
 RAISERROR (@Message, 0,1) WITH NOWAIT;
 EXEC Zagros.InsertHistory @SP = @SP,
@@ -69,6 +70,15 @@ BEGIN
     SET @ErrorText = 'Did not find the Order! OrderID = ' + CONVERT(VARCHAR(10), @OrderID) + ' not found in table Order! Please check the OrderID and try again. Rasing Error!';
     RAISERROR(@ErrorText, 16,1);
 END;
+
+SET @ErrorText = 'Failed Calling SP CalTotalAmount!';
+EXEC Zagros.CalTotalAmount @SomeOrderID = @OrderID, @Total =  @TotalAmount OUTPUT;
+
+SET @Message = '@TotalAmount = ' + CONVERT(VARCHAR(10), @TotalAmount) + ' is the return value from SP Zagros.CalTotalAmount.';
+RAISERROR (@Message, 0,1) WITH NOWAIT;
+EXEC Zagros.InsertHistory @SP = @SP,
+                            @Status = 'Run',
+                            @Message = @Message;
 
 SET @ErrorText = 'Failed UPDATE to table [Order]!';
 UPDATE Zagros.[Order]
