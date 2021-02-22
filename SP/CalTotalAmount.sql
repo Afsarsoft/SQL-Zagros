@@ -3,16 +3,16 @@ CREATE OR ALTER PROCEDURE Zagros.CalTotalAmount
     @Total        MONEY OUTPUT
 AS
 /***************************************************************************************************
-File: AddOrder.sql
+File: CalTotalAmount.sql
 ----------------------------------------------------------------------------------------------------
 Procedure:      Zagros.CalTotalAmount
 Create Date:    2021-03-01 (yyyy-mm-dd)
 Author:         Surush Cyrus
 Description:    Calculates Total Amount for an Order 
-Call by:        Zagros.UpdateOrder, TBD
+Call by:        Zagros.UpdateOrder, Zagros.InsertOrderV2
 
 Steps:          1- Create a table varaiable from Zagros.Orderdetail for needed OrderId
-                2- Calcuates the output variable @TotalAmount 
+                2- Calcuates the output variable @Total 
 ****************************************************************************************************
 SUMMARY OF CHANGES
 Date(yyyy-mm-dd)    Author              Comments
@@ -47,7 +47,6 @@ SET @CurrentRow = 0;
 SET @TotalAmount = 0;
 SET @TotalTotalAmount = 0;
 SET @OrderID = 0;
-SET @ErrorText = 'Unexpected ERROR in setting the variables!';
 SET @UnitPrice = 0;
 SET @Quantity = 0;
 SET @ErrorText = 'Unexpected ERROR in setting the variables!';
