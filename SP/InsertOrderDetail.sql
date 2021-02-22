@@ -12,7 +12,7 @@ Procedure:      Zagros.InsertOrderDetail
 Create Date:    2020-09-01 (yyyy-mm-dd)
 Author:         Surush Cyrus
 Description:    Insert an order detail 
-Call by:        Zagros.AddOrder, Add hoc
+Call by:        Zagros.AddOrder
 
 Steps:          1- Check the @OrderID for RI issue in Zagros.[Order]
                 2- Check the @LocationID for RI issue in Zagros.Location

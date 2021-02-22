@@ -2,7 +2,22 @@ CREATE OR ALTER PROCEDURE Zagros.CalTotalAmount
     @SomeOrderID  INT,
     @Total        MONEY OUTPUT
 AS
+/***************************************************************************************************
+File: AddOrder.sql
+----------------------------------------------------------------------------------------------------
+Procedure:      Zagros.CalTotalAmount
+Create Date:    2021-03-01 (yyyy-mm-dd)
+Author:         Surush Cyrus
+Description:    Calculates Total Amount for an Order 
+Call by:        Zagros.UpdateOrder, TBD
 
+Steps:          1- Create a table varaiable from Zagros.Orderdetail for needed OrderId
+                2- Calcuates the output variable @TotalAmount 
+****************************************************************************************************
+SUMMARY OF CHANGES
+Date(yyyy-mm-dd)    Author              Comments
+------------------- ------------------- ------------------------------------------------------------
+****************************************************************************************************/
 SET NOCOUNT ON;
 
 DECLARE @ErrorText   VARCHAR(MAX),      

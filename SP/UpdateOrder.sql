@@ -15,7 +15,8 @@ Author:         Surush Cyrus
 Description:    Updatre an Order
 Call by:        UI, Add hoc
 
-Steps:          1- Check the @OrderID for RI issue in Zagros.[Order] table
+Steps:          1- Check the @OrderID for RI issue in Zagros.[Order] 
+                2- Call SP Zagros.CalTotalAmount to calculate @TotalAmount
                 2- Update table Zagros.[Order]
 
 Parameter(s):   @OrderID

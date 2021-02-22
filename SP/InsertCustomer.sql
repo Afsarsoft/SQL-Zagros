@@ -18,30 +18,11 @@ Procedure:      Zagros.InsertCustomer
 Create Date:    2020-09-01 (yyyy-mm-dd)
 Author:         Surush Cyrus
 Description:    Insert a Customer
-Call by:        Zagros.AddOrder, Add hoc
+Call by:        Zagros.AddOrder
 
 Steps:          1- Check the @CountryID for RI issue in Zagros.Country table
                 2- Error out if @Email already is in table Zagros.Customer
-                3- Error out if @CustomerID <= 10000000
-                4- Insert to table Zagros.Customer
-
-Parameter(s):   @CountryID  
-                @Email      
-                @FirstName  
-                @LastName   
-                @ID         
-                @Tel1       NULL
-                @Tel2       NULL
-                @Website    NULL
-                @Address    NULL
-                @Note       NULL
-
-Usage:          Zagros.InsertCustomer @CustomerID = 100001052,
-                                      @CountryID = 91,
-                                      @Email = '100001052@xyz.com',
-                                      @FirstName = 'TBD',
-                                      @LastName = 'TBD',
-                                      @ID = 'TBD'
+                3- Insert to table Zagros.Customer
 ****************************************************************************************************
 SUMMARY OF CHANGES
 Date(yyyy-mm-dd)    Author              Comments
@@ -84,13 +65,6 @@ FROM Zagros.Customer
 WHERE Email = @Email)
 BEGIN
     SET @ErrorText = 'Email = ' + @Email + ' already is in table Customer! This is not acceptable. Rasing Error!';
-    RAISERROR(@ErrorText, 16,1);
-END;
-
-SET @ErrorText = 'Failed check for variable @CustomerID!';
-IF @CustomerID <= 10000000
-BEGIN
-    SET @ErrorText = 'CustomerID = ' + CONVERT(VARCHAR(10), @CustomerID) + ' This value is not acceptable. Rasing Error!';
     RAISERROR(@ErrorText, 16,1);
 END;
 

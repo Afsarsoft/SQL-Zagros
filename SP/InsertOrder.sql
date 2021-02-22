@@ -10,7 +10,7 @@ Procedure:      Zagros.InsertOrder
 Create Date:    2020-09-01 (yyyy-mm-dd)
 Author:         Surush Cyrus
 Description:    Insert an order
-Call by:        Zagros.AddOrder, Add hoc
+Call by:        Zagros.AddOrder
 
 Steps:          1- Check the @CustomerID for RI issue in Zagros.Customertable
                 2- Error out if @TotalAmount < 0
