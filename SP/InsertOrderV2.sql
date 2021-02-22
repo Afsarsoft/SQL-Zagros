@@ -1,29 +1,26 @@
-CREATE OR ALTER PROCEDURE Zagros.InsertOrder
+CREATE OR ALTER PROCEDURE Zagros.InsertOrderV2
     @OrderID     INT,
-    @CustomerID  INT,
-    @TotalAmount MONEY
+    @CustomerID  INT
 AS
 /***************************************************************************************************
-File: InsertOrder.sql
+File: InsertOrderV2.sql
 ----------------------------------------------------------------------------------------------------
-Procedure:      Zagros.InsertOrder
-Create Date:    2020-09-01 (yyyy-mm-dd)
+Procedure:      Zagros.InsertOrderV2
+Create Date:    2021-03-01 (yyyy-mm-dd)
 Author:         Surush Cyrus
 Description:    Insert an order
-Call by:        Zagros.AddOrder
+Call by:        Add Hoc
 Note: SP Zagros.InsertOrder is design to work only with AddOrder SP. For add hoc use, only use SP Zagros.InsertOrderV2
 
 Steps:          1- Check the @CustomerID for RI issue in Zagros.Customertable
-                2- Error out if @TotalAmount < 0
+                2- Call SP Zagros.CalTotalAmount to calculate @TotalAmount
                 3- Insert to table Zagros.[Order]
 
 Parameter(s):   @OrderID
                 @CustomerID
-                @TotalAmount
 
-Usage:          Zagros.InsertOrder @OrderID = 100001003,
-                                   @CustomerID = 100001001,
-                                   @TotalAmount = 5000 
+Usage:          Zagros.InsertOrderV2 @OrderID = 100000003,
+                                     @CustomerID = 100000001,
 ****************************************************************************************************
 SUMMARY OF CHANGES
 Date(yyyy-mm-dd)    Author              Comments
@@ -34,13 +31,18 @@ SET NOCOUNT ON;
 DECLARE @ErrorText   VARCHAR(MAX),      
         @Message     VARCHAR(255),    
         @StartTime   DATETIME,
-        @SP          VARCHAR(50)
+        @SP          VARCHAR(50),
+
+        @TotalAmount MONEY;
+
 
 BEGIN TRY;   
 SET @ErrorText = 'Unexpected ERROR in setting the variables!';
 
 SET @SP = OBJECT_NAME(@@PROCID);
 SET @StartTime = GETDATE();
+
+SET @TotalAmount = 0;
 
 SET @Message = 'Started SP ' + @SP + ' at ' + FORMAT(@StartTime , 'MM/dd/yyyy HH:mm:ss');   
 RAISERROR (@Message, 0,1) WITH NOWAIT;
@@ -59,13 +61,14 @@ BEGIN
     RAISERROR(@ErrorText, 16,1);
 END;
 
-SET @ErrorText = 'Failed check for variable @TotalAmount!';
--- Check for value
-IF @TotalAmount < 0
-BEGIN
-    SET @ErrorText = 'TotalAmout = ' + CONVERT(VARCHAR(10), @TotalAmount) + ' This value is not acceptable. Rasing Error!';
-    RAISERROR(@ErrorText, 16,1);
-END;
+SET @ErrorText = 'Failed Calling SP CalTotalAmount!';
+EXEC Zagros.CalTotalAmount @SomeOrderID = @OrderID, @Total =  @TotalAmount OUTPUT;
+
+SET @Message = '@TotalAmount = ' + CONVERT(VARCHAR(10), @TotalAmount) + ' is the return value from SP Zagros.CalTotalAmount.';
+RAISERROR (@Message, 0,1) WITH NOWAIT;
+EXEC Zagros.InsertHistory @SP = @SP,
+                            @Status = 'Run',
+                            @Message = @Message;
 
 SET @ErrorText = 'Failed INSERT to table Order!';
 INSERT INTO Zagros.[Order]

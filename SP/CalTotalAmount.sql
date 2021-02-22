@@ -73,7 +73,7 @@ SET @RowsToProcess=@@ROWCOUNT
 
 IF @RowsToProcess = 0
 BEGIN
-    SET @ErrorText = 'Zagros.Orderdetail table is Empty! Rasing Error!';
+    SET @ErrorText = 'Table variable @Orderdetail is empty! No rows qualified using Zagros.Orderdetail table! Rasing Error!';
     RAISERROR(@ErrorText, 16,1);
 END;
 -------------------------------------------------------------------------------

@@ -16,6 +16,7 @@ Date(yyyy-mm-dd)    Author              Comments
 -- INSERT 
 SELECT *
 FROM Zagros.Customer
+ORDER BY CustomerID DESC
 
 SELECT *
 FROM Zagros.History
@@ -28,17 +29,16 @@ FROM Zagros.[Order]
 SELECT *
 FROM Zagros.OrderDetail
 
-EXEC Zagros.InsertOrder @OrderID = 100001001,
-     @CustomerID =  100001001,
-     @TotalAmount = 5000
+EXEC Zagros.InsertOrderV2 @OrderID = 100000001,
+     @CustomerID =  100000001
 
-EXEC Zagros.InsertOrderDetail @OrderID = 100001001,
+EXEC Zagros.InsertOrderDetail @OrderID = 100000001,
      @LocationID = 01,
 	@PackageID = 01,
 	@UnitPrice = 300,
      @Quantity = 1
 
-EXEC Zagros.InsertOrderDetail @OrderID = 100001001,
+EXEC Zagros.InsertOrderDetail @OrderID = 100000001,
      @LocationID = 02,
 	@PackageID = 04,
 	@UnitPrice = 60,
