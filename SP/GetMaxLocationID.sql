@@ -26,7 +26,6 @@ SET @ErrorText = 'Failed SELECT from table Location!';
 IF(NOT EXISTS(SELECT 1
 FROM Zagros.Location))
 BEGIN
-    SET @ErrorText = 'Failed SELECT from table Parameter!';
     SET @MaxLocationID = (SELECT NumValue
     FROM Zagros.Parameter
     WHERE NAME = 'StartLocationID');

@@ -26,7 +26,6 @@ SET @ErrorText = 'Failed SELECT from table Customer!';
 IF(NOT EXISTS(SELECT 1
 FROM Zagros.Customer))
 BEGIN
-    SET @ErrorText = 'Failed SELECT from table Parameter!';
     SET @MaxCustomerID = (SELECT NumValue
     FROM Zagros.Parameter
     WHERE NAME = 'StartCustomerID');

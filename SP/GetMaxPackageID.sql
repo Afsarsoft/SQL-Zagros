@@ -26,7 +26,6 @@ SET @ErrorText = 'Failed SELECT from table Package!';
 IF(NOT EXISTS(SELECT 1
 FROM Zagros.Package))
 BEGIN
-    SET @ErrorText = 'Failed SELECT from table Parameter!';
     SET @MaxPackageID = (SELECT NumValue
     FROM Zagros.Parameter
     WHERE NAME = 'StartPackageID');
