@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="SCYRUSH1"
   DTS:CreatorName="REDMOND\scyrus"
-  DTS:DTSID="{7B03F825-770C-4208-9766-0E614310AEFE}"
+  DTS:DTSID="{0E38DB66-C704-4C73-84CF-0FB2F8F138A5}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.152"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="21"
-  DTS:VersionGUID="{DF4B5E96-1CBD-4707-8E78-5B9240BBB049}">
+  DTS:VersionBuild="23"
+  DTS:VersionGUID="{DE7AF4EB-0EF4-4C7C-B4E4-6C707FE92820}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[01_BuildTables.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{7B96A6DE-5218-4832-8685-28B3413099A0}"
+      DTS:DTSID="{5A384F12-81B2-413F-92BE-8515A4BCDE04}"
       DTS:ObjectName="01_BuildTables.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -29,7 +29,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[02_InsertParameter.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{F87C69A9-973D-4AB8-86A0-7E4656B92146}"
+      DTS:DTSID="{B445FE28-945D-4D83-9818-FA8D7EBB32E9}"
       DTS:ObjectName="02_InsertParameter.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -39,7 +39,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[03_InsertCountry.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{800ADA60-5DD0-48DE-99C3-A0DE5C666134}"
+      DTS:DTSID="{19C64F9A-AC02-45D0-9BE3-B189D1B29917}"
       DTS:ObjectName="03_InsertCountry.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -49,7 +49,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[04_InsertLocation.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{DC1BFEDC-420B-46D6-B2B2-462963ED9FB1}"
+      DTS:DTSID="{187753C1-901E-41C1-B1A7-A5E7682C77F6}"
       DTS:ObjectName="04_InsertLocation.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -59,7 +59,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[05_InsertOrderStatus.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{9ED58366-C4F4-442B-BEF4-3940F493EF1A}"
+      DTS:DTSID="{B0B99E70-FC63-4415-BD8A-DCCCDADFC726}"
       DTS:ObjectName="05_InsertOrderStatus.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -69,7 +69,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[06_InsertPackage.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{44D554D6-6EEB-4B45-90ED-34A1FC98DAF3}"
+      DTS:DTSID="{E4536354-E5DA-418E-9AD5-9AF62422CCDF}"
       DTS:ObjectName="06_InsertPackage.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -79,7 +79,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[07_InsertCustomer.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{1953BBA2-DEE7-4747-A80F-E8D94FA167BE}"
+      DTS:DTSID="{334F5B2A-2D42-4F29-A526-D70E7B157642}"
       DTS:ObjectName="07_InsertCustomer.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -89,7 +89,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[08_InsertCustomerOrder.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{63E9F026-ABF3-4759-990F-46902E887000}"
+      DTS:DTSID="{92587CAB-1D10-4BFA-A47F-D85811705C5A}"
       DTS:ObjectName="08_InsertCustomerOrder.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -99,7 +99,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[09_BuildFKs.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{41CB8450-4D0C-4B40-BEF1-B03F467F2A45}"
+      DTS:DTSID="{EF464136-A00F-4A47-A509-CFE07EA6795C}"
       DTS:ObjectName="09_BuildFKs.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -109,7 +109,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Con_SQL_File]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{FA00E708-C57D-4769-BB8F-C28500118DAD}"
+      DTS:DTSID="{D9684642-45ED-4C8D-A4BA-E09AD0A9374E}"
       DTS:ObjectName="Con_SQL_File">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::FolderPath]+"\\"+ @[User::FileName]</DTS:PropertyExpression>
@@ -121,7 +121,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[CreateSchema.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{C2E38E19-24B2-408A-BCF8-53FB8956F046}"
+      DTS:DTSID="{916F1D17-4080-450F-B9D6-539EAEEA7D88}"
       DTS:ObjectName="CreateSchema.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -129,25 +129,20 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[LocalHost.SQL1.sa]"
+      DTS:refId="Package.ConnectionManagers[LocalHost.SQL1]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{422E97DF-9108-45E3-A8ED-E5E911842758}"
-      DTS:ObjectName="LocalHost.SQL1.sa">
+      DTS:DTSID="{2B89FC14-2980-4AA8-8242-FEBC52EC22CA}"
+      DTS:ObjectName="LocalHost.SQL1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=.;User ID=sa;Initial Catalog=SQL1;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMYi/rr8wqk6vtKCH0KEzpwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB8Q94bugDE+ROkWfJaj1czAAAAAASAAACgAAAAEAAAACqo1FLqymD1PIYaBHr6OcAYAAAAkC5SSS7ErFfl6lj/GlS3GWQ+nkqKCEJhFAAAAFxNYmu0PNlSQ35IU9mApJckZDq6</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=.;Initial Catalog=SQL1;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{1BA7E332-C6D4-4ECF-AE1F-7D3B47BC1916}"
+      DTS:DTSID="{5B09602F-B9B7-4AFF-8ABD-DE11A18E58D4}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="FileName">
@@ -157,7 +152,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{7471EDC3-D475-4339-ADC0-294BF65C5A8E}"
+      DTS:DTSID="{476BFF91-5E97-49DD-A554-8C352AD2F689}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="FolderPath">
@@ -170,7 +165,7 @@
       DTS:refId="Package\Build Environment, Part 1"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:DTSID="{0C6EEC8A-9B4C-4930-AC74-E9EB19FB8A62}"
+      DTS:DTSID="{8CFBC1BB-C94B-4720-A75F-9AE08B43D4C4}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Build Environment, Part 1">
@@ -180,7 +175,7 @@
           DTS:refId="Package\Build Environment, Part 1\Build Tables"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{C0B2468A-F374-4791-96FA-D6442B49756A}"
+          DTS:DTSID="{1B1100F6-1A0C-4E34-8B48-57F12FC63D27}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Build Tables"
@@ -189,7 +184,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{422E97DF-9108-45E3-A8ED-E5E911842758}"
+              SQLTask:Connection="{2B89FC14-2980-4AA8-8242-FEBC52EC22CA}"
               SQLTask:SqlStmtSourceType="FileConnection"
               SQLTask:SqlStatementSource="01_BuildTables.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -198,7 +193,7 @@
           DTS:refId="Package\Build Environment, Part 1\Insert Country"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{FCA074DD-B94B-45AD-8161-10D3D4C875DB}"
+          DTS:DTSID="{77DB4F92-E469-4C67-92D6-024CB0903238}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Insert Country"
@@ -207,7 +202,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{422E97DF-9108-45E3-A8ED-E5E911842758}"
+              SQLTask:Connection="{2B89FC14-2980-4AA8-8242-FEBC52EC22CA}"
               SQLTask:SqlStmtSourceType="FileConnection"
               SQLTask:SqlStatementSource="03_InsertCountry.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -216,7 +211,7 @@
           DTS:refId="Package\Build Environment, Part 1\Insert Parameter"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{783CDDA4-E2BC-40BE-A471-553121184556}"
+          DTS:DTSID="{A6849D7E-8AF3-4881-AEC9-7F39BC541BE7}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Insert Parameter"
@@ -225,7 +220,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{422E97DF-9108-45E3-A8ED-E5E911842758}"
+              SQLTask:Connection="{2B89FC14-2980-4AA8-8242-FEBC52EC22CA}"
               SQLTask:SqlStmtSourceType="FileConnection"
               SQLTask:SqlStatementSource="02_InsertParameter.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -235,7 +230,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Build Environment, Part 1.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{86B369BD-506A-4ADC-A55D-BEF36E76BBD4}"
+          DTS:DTSID="{CF1A9721-4768-4907-80F4-0CC347CCBB30}"
           DTS:From="Package\Build Environment, Part 1\Build Tables"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -243,7 +238,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Build Environment, Part 1.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
-          DTS:DTSID="{E0AB9F00-A804-4ABA-91C4-D79EB4A23DB9}"
+          DTS:DTSID="{9DFDFAE2-DFD5-4969-B638-A67CAE0AD874}"
           DTS:From="Package\Build Environment, Part 1\Insert Parameter"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
@@ -254,7 +249,7 @@
       DTS:refId="Package\Build Environment, Part 2"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:DTSID="{0CBD481D-8281-4504-817A-6FFA82B442A8}"
+      DTS:DTSID="{5D840208-1A48-46B0-A681-A1E41EDC02AA}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Build Environment, Part 2">
@@ -264,7 +259,7 @@
           DTS:refId="Package\Build Environment, Part 2\Insert Location"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{ACFE487E-FB68-446E-87A8-3EEA77D29757}"
+          DTS:DTSID="{E3B373A6-63C2-4931-A09A-C013B3C2E3DE}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Insert Location"
@@ -273,7 +268,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{422E97DF-9108-45E3-A8ED-E5E911842758}"
+              SQLTask:Connection="{2B89FC14-2980-4AA8-8242-FEBC52EC22CA}"
               SQLTask:SqlStmtSourceType="FileConnection"
               SQLTask:SqlStatementSource="04_InsertLocation.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -282,7 +277,7 @@
           DTS:refId="Package\Build Environment, Part 2\Insert OrderStatus"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{23E6DA2F-AD8E-4A31-888F-61C8B680D01D}"
+          DTS:DTSID="{524D8BD4-2212-4CD6-A095-B8B4BB8E2D02}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Insert OrderStatus"
@@ -291,7 +286,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{422E97DF-9108-45E3-A8ED-E5E911842758}"
+              SQLTask:Connection="{2B89FC14-2980-4AA8-8242-FEBC52EC22CA}"
               SQLTask:SqlStmtSourceType="FileConnection"
               SQLTask:SqlStatementSource="05_InsertOrderStatus.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -300,7 +295,7 @@
           DTS:refId="Package\Build Environment, Part 2\Insert Package"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{99AF5F1E-3AEF-4BBE-B9E7-1DB3DECEDC67}"
+          DTS:DTSID="{1545CB1F-3687-4777-9428-3A53ED50D1C3}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Insert Package"
@@ -309,7 +304,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{422E97DF-9108-45E3-A8ED-E5E911842758}"
+              SQLTask:Connection="{2B89FC14-2980-4AA8-8242-FEBC52EC22CA}"
               SQLTask:SqlStmtSourceType="FileConnection"
               SQLTask:SqlStatementSource="06_InsertPackage.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -319,7 +314,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Build Environment, Part 2.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{BD32DDAA-95CA-49D5-9376-2BEA650C817D}"
+          DTS:DTSID="{C4211C1A-826B-4262-A59C-1551F6640928}"
           DTS:From="Package\Build Environment, Part 2\Insert Location"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -327,7 +322,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Build Environment, Part 2.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
-          DTS:DTSID="{DA233E80-9A59-4015-A63B-956577DF4209}"
+          DTS:DTSID="{FF58F141-AB9B-4516-87D9-B9BAC8CE9C41}"
           DTS:From="Package\Build Environment, Part 2\Insert OrderStatus"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
@@ -338,7 +333,7 @@
       DTS:refId="Package\Build Environment, Part 3"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:DTSID="{3A6397AF-CCF9-49C1-80B4-666D5BFDAF3F}"
+      DTS:DTSID="{E747FDF8-B0DA-4576-BDBF-DE542E27EEB3}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Build Environment, Part 3">
@@ -348,7 +343,7 @@
           DTS:refId="Package\Build Environment, Part 3\Build FKs"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{C9EFE79A-B2AD-4A09-B8B4-ADB1BB292092}"
+          DTS:DTSID="{2276101D-303D-423F-B819-2F8450E07C82}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Build FKs"
@@ -357,7 +352,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{422E97DF-9108-45E3-A8ED-E5E911842758}"
+              SQLTask:Connection="{2B89FC14-2980-4AA8-8242-FEBC52EC22CA}"
               SQLTask:SqlStmtSourceType="FileConnection"
               SQLTask:SqlStatementSource="09_BuildFKs.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -366,7 +361,7 @@
           DTS:refId="Package\Build Environment, Part 3\Insert Customer"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{23693D69-E926-44F2-A76E-43C9D01A4BED}"
+          DTS:DTSID="{132A3B25-C968-4867-9AAF-21052B0AE86B}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Insert Customer"
@@ -375,7 +370,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{422E97DF-9108-45E3-A8ED-E5E911842758}"
+              SQLTask:Connection="{2B89FC14-2980-4AA8-8242-FEBC52EC22CA}"
               SQLTask:SqlStmtSourceType="FileConnection"
               SQLTask:SqlStatementSource="07_InsertCustomer.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -384,7 +379,7 @@
           DTS:refId="Package\Build Environment, Part 3\Insert CustomerOrder"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{D544E1F3-E7D6-400B-8168-73F5FD516DFF}"
+          DTS:DTSID="{9A01E89E-F3F7-4197-B9CF-1A2AF891F020}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Insert CustomerOrder"
@@ -393,7 +388,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{422E97DF-9108-45E3-A8ED-E5E911842758}"
+              SQLTask:Connection="{2B89FC14-2980-4AA8-8242-FEBC52EC22CA}"
               SQLTask:SqlStmtSourceType="FileConnection"
               SQLTask:SqlStatementSource="08_InsertCustomerOrder.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -403,7 +398,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Build Environment, Part 3.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{C2D89A79-04A5-453F-8F30-7D3C5B4559C5}"
+          DTS:DTSID="{81C09B91-72BD-4CE9-992C-3F10C1D986DA}"
           DTS:From="Package\Build Environment, Part 3\Insert Customer"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -411,7 +406,7 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Build Environment, Part 3.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
-          DTS:DTSID="{6638AC15-AF2E-4BC8-8A00-88DEEBE404F5}"
+          DTS:DTSID="{C5B7A762-AC40-4E70-92D5-8CC83967A3E6}"
           DTS:From="Package\Build Environment, Part 3\Insert CustomerOrder"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
@@ -422,7 +417,7 @@
       DTS:refId="Package\Install Schema"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{ED71D559-F11A-4E7A-81F2-B7DE95E9B1EF}"
+      DTS:DTSID="{7E555EA2-86CF-4D8F-AD50-F72E233A8D33}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Install Schema"
@@ -431,7 +426,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{422E97DF-9108-45E3-A8ED-E5E911842758}"
+          SQLTask:Connection="{2B89FC14-2980-4AA8-8242-FEBC52EC22CA}"
           SQLTask:SqlStmtSourceType="FileConnection"
           SQLTask:SqlStatementSource="CreateSchema.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
@@ -440,14 +435,14 @@
       DTS:refId="Package\Loop SP Scripts"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
-      DTS:DTSID="{8A132CCC-B3BC-47F4-ABCC-645E171D7F98}"
+      DTS:DTSID="{21985213-040D-4572-8CA8-97C82E1E7B55}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
       DTS:ObjectName="Loop SP Scripts">
       <DTS:ForEachEnumerator
         DTS:CreationName="Microsoft.ForEachFileEnumerator"
-        DTS:DTSID="{3BEF75AB-3292-43C2-BA40-CC535257BE70}"
-        DTS:ObjectName="{3BEF75AB-3292-43C2-BA40-CC535257BE70}">
+        DTS:DTSID="{1BC3FF40-5E8B-4412-B6AF-F50A7510AFEF}"
+        DTS:ObjectName="{1BC3FF40-5E8B-4412-B6AF-F50A7510AFEF}">
         <DTS:PropertyExpression
           DTS:Name="Directory">@[User::FolderPath]</DTS:PropertyExpression>
         <DTS:ObjectData>
@@ -469,7 +464,7 @@
           DTS:refId="Package\Loop SP Scripts\Install SPs"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{D785D1D3-0D76-4A73-8C47-6FE55B361C05}"
+          DTS:DTSID="{98618F6B-1B35-4C36-8F32-D29A6B22644C}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Install SPs"
@@ -478,7 +473,7 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{422E97DF-9108-45E3-A8ED-E5E911842758}"
+              SQLTask:Connection="{2B89FC14-2980-4AA8-8242-FEBC52EC22CA}"
               SQLTask:SqlStmtSourceType="FileConnection"
               SQLTask:SqlStatementSource="Con_SQL_File" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
@@ -487,8 +482,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{F346C906-978D-4183-9D45-1FA3ECDDE35D}"
-          DTS:ObjectName="{F346C906-978D-4183-9D45-1FA3ECDDE35D}"
+          DTS:DTSID="{C76BB17A-A512-4328-9D6D-4F09F1AAA0A6}"
+          DTS:ObjectName="{C76BB17A-A512-4328-9D6D-4F09F1AAA0A6}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::FileName" />
       </DTS:ForEachVariableMappings>
@@ -498,7 +493,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{9DCA815E-F5B7-46A9-B950-C314DA212A92}"
+      DTS:DTSID="{34E3C0C3-EBD7-4639-8AFA-A6076E99076F}"
       DTS:From="Package\Install Schema"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -506,7 +501,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{FDD33B4B-CECA-45EE-BC84-746FA13343D3}"
+      DTS:DTSID="{4FE27B5E-4A2E-4A95-B560-67F373E02F43}"
       DTS:From="Package\Loop SP Scripts"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
@@ -514,7 +509,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
-      DTS:DTSID="{7AB08E05-E034-4B55-AD19-61D0A3FAE73D}"
+      DTS:DTSID="{3761955D-D583-4424-9905-33BAC58EDCB4}"
       DTS:From="Package\Build Environment, Part 1"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
@@ -522,7 +517,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
-      DTS:DTSID="{3738A939-918E-4E20-800A-C3EBD4888324}"
+      DTS:DTSID="{55495663-6A1A-4744-A5DD-941220018E5F}"
       DTS:From="Package\Build Environment, Part 2"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
@@ -539,7 +534,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="138,42.6666666666667"
           Id="Package\Build Environment, Part 1\Build Tables"
@@ -598,9 +593,9 @@
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="False"
+          IsExpanded="True"
           PanelSize="270,238"
-          Size="270,42.6666666666667"
+          Size="270,280.666666666667"
           Id="Package\Build Environment, Part 1"
           TopLeft="124.374998146668,340.052637979595" />
         <NodeLayout
@@ -634,9 +629,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -658,16 +651,14 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="False"
+          IsExpanded="True"
           PanelSize="252.666666666667,241.333333333334"
-          Size="252.666666666667,42.6666666666667"
+          Size="252.666666666667,284"
           Id="Package\Build Environment, Part 2"
           TopLeft="459.374993154779,338.736847540018" />
         <NodeLayout
@@ -701,9 +692,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -725,20 +714,18 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="False"
+          IsExpanded="True"
           PanelSize="274.666666666667,246.666666666667"
-          Size="222.666666666667,42.6666666666667"
+          Size="274.666666666667,289.333333333334"
           Id="Package\Build Environment, Part 3"
           TopLeft="771.249988507479,338.614039942939" />
         <NodeLayout
-          Size="168,42.6666666666667"
+          Size="149.333333333334,42.6666666666667"
           Id="Package\Install Schema"
           TopLeft="180.624997308478,37.6315796556896" />
         <NodeLayout
@@ -754,7 +741,7 @@
           TopLeft="136.249997969717,130.684212986122" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="261.770830972431,80.2982463223562">
+          TopLeft="257.104164305764,80.2982463223563">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -780,14 +767,14 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,46.0350916601397"
+              EndConnector="0,46.0350916601396"
               Start="0,0"
-              End="0,38.5350916601397">
+              End="0,38.5350916601396">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.5350916601397" />
+                    End="0,38.5350916601396" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -798,7 +785,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="394.374998146668,360.72807609314">
+          TopLeft="394.374998146668,480.561409426473">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -820,7 +807,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="712.041659821446,360.008777074812">
+          TopLeft="712.041659821446,482.008777074812">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"

@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="SCYRUSH1"
   DTS:CreatorName="REDMOND\scyrus"
-  DTS:DTSID="{A84CC025-0354-4411-BCF5-46281F853447}"
+  DTS:DTSID="{A92436B9-1AC7-495D-AB33-DE5970F137F5}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.152"
   DTS:LocaleID="1033"
-  DTS:ObjectName="ImportFromCSV"
+  DTS:ObjectName="ZagrosImportFromCSV"
   DTS:PackageType="5"
-  DTS:VersionBuild="66"
-  DTS:VersionGUID="{BD5CD897-BFC8-45F7-BEF5-A209D4980171}">
+  DTS:VersionBuild="69"
+  DTS:VersionGUID="{4988E7A1-9A41-40D3-B809-2AF020E222F1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Country]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{961C1A0E-86A4-4353-9B75-084B81783140}"
+      DTS:DTSID="{A6AF93B3-81A3-4184-965F-7D35E5609EDB}"
       DTS:ObjectName="Country">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -38,7 +38,7 @@
               DTS:DataType="17"
               DTS:TextQualified="True"
               DTS:ObjectName="CountryID"
-              DTS:DTSID="{AD81EE9E-B1E6-4D4E-A02C-646BB9B9A4C1}"
+              DTS:DTSID="{5F626437-F114-42C5-B2D2-0B20B9A8AFA6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -47,7 +47,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Name"
-              DTS:DTSID="{43859E37-F943-4A9F-9B9B-E17D615418B6}"
+              DTS:DTSID="{263819A3-9A56-43EA-8179-04BEBBC4FD85}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -56,7 +56,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Customer]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{CF75943B-976F-43B4-AC93-7F5C5A7215EF}"
+      DTS:DTSID="{73FC039C-2DC4-4FE4-883E-0D61F2D2EC6D}"
       DTS:ObjectName="Customer">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -75,7 +75,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerID"
-              DTS:DTSID="{4E9BF2D4-A5BC-48BA-9DC6-C27F954EB25F}"
+              DTS:DTSID="{0D4DE2C9-51A0-46A8-88EF-742483135EBD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -83,7 +83,7 @@
               DTS:DataType="17"
               DTS:TextQualified="True"
               DTS:ObjectName="CountryID"
-              DTS:DTSID="{A7EAE008-DDF2-4CA8-BB92-D9E438F98422}"
+              DTS:DTSID="{6892D8DC-8048-4C40-AEEA-2A827368BFB0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -92,7 +92,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Email"
-              DTS:DTSID="{EDE399DA-3EBA-4D72-8D72-77EFEECA4057}"
+              DTS:DTSID="{E3F9775A-5913-4941-AB70-ACE47D2E05EF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -101,7 +101,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FirstName"
-              DTS:DTSID="{236C6A5F-9B9F-49AC-80C3-3F5B000F0C7C}"
+              DTS:DTSID="{7498FE72-00C8-441A-8A22-5CD0448EBA54}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -110,7 +110,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="LastName"
-              DTS:DTSID="{C9ACCDC9-2FBB-4FDE-B615-05C8ABC80D70}"
+              DTS:DTSID="{D3E63D75-703A-4E7F-8704-636D486D5A55}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -119,7 +119,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ID"
-              DTS:DTSID="{514203B4-85EE-4951-A1B0-E25EC212DEA8}"
+              DTS:DTSID="{B1B18FAF-3225-4CE4-A542-16B9E179600F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -128,7 +128,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Tel1"
-              DTS:DTSID="{AC6BDCEC-6767-459F-BA70-303C428E3692}"
+              DTS:DTSID="{19771CA4-720C-4E00-80FC-4523CFF8B8EA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -137,7 +137,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Tel2"
-              DTS:DTSID="{1A0D6BAB-33DF-4625-A448-57779EE3AB85}"
+              DTS:DTSID="{616BE119-5982-4718-83EF-198BB9A8B087}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -146,7 +146,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Website"
-              DTS:DTSID="{83D4A3DC-6739-4A6D-9D15-EA864DE5554B}"
+              DTS:DTSID="{6E6C45F2-1355-4CEF-B529-577CBA29AAAF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -155,7 +155,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Address"
-              DTS:DTSID="{ED93C965-56C2-46D8-A55F-8F1E40B73851}"
+              DTS:DTSID="{C0FFDBC8-C3D5-4EC0-A013-8128929D87A3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -164,7 +164,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Note"
-              DTS:DTSID="{BEE7CB63-BF1B-40C3-B7C7-7A2850529B92}"
+              DTS:DTSID="{5D800B6A-B0EA-4398-9010-BEA3360C8AB4}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -173,7 +173,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[CustomerOrder]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{2470794B-6382-444B-B079-63BBAB3D00B9}"
+      DTS:DTSID="{16B4B655-388B-4771-89DE-9A172B3FF9B4}"
       DTS:ObjectName="CustomerOrder">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -193,7 +193,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Email"
-              DTS:DTSID="{D6D2B54E-3FB8-4F4E-8B78-EE362A1B3FA5}"
+              DTS:DTSID="{14F75A82-03A8-4AD1-B787-3959BA30E759}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -201,7 +201,7 @@
               DTS:DataType="17"
               DTS:TextQualified="True"
               DTS:ObjectName="LocationID"
-              DTS:DTSID="{33BB6CD3-9E73-4ACA-B5A8-0817BE31EB7A}"
+              DTS:DTSID="{9DAD0DB3-89F0-4576-B717-E0D6B1ED458C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -209,7 +209,7 @@
               DTS:DataType="17"
               DTS:TextQualified="True"
               DTS:ObjectName="PackageID"
-              DTS:DTSID="{8ACA6C6C-416A-4D03-AB9B-0598F007D33A}"
+              DTS:DTSID="{31D7EE5E-E60E-4701-AB1D-AED474F5920A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -217,7 +217,7 @@
               DTS:DataType="6"
               DTS:TextQualified="True"
               DTS:ObjectName="UnitPrice"
-              DTS:DTSID="{9E8A5AD9-27FC-4F46-B010-3E3747DBE8DB}"
+              DTS:DTSID="{F802B491-7868-4579-A708-A720E514D421}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -225,7 +225,7 @@
               DTS:DataType="17"
               DTS:TextQualified="True"
               DTS:ObjectName="Quantity"
-              DTS:DTSID="{10167E02-058B-490D-81F7-7CE1B2D6853E}"
+              DTS:DTSID="{7C756861-EAFD-4086-9CC9-BA10CCF207A4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -234,31 +234,26 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Note"
-              DTS:DTSID="{B266BCCA-7E38-4CF1-9C76-933D55E9D7BB}"
+              DTS:DTSID="{14D95207-F7F3-4CCA-8428-771121A4FA48}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[LocalHost.SQL1.sa]"
+      DTS:refId="Package.ConnectionManagers[LocalHost.SQL1]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{B64B3EE3-9093-4338-B70E-46EA72FA7B4A}"
-      DTS:ObjectName="LocalHost.SQL1.sa">
+      DTS:DTSID="{D389F7BF-BB2C-4EAF-BB2C-FD5B1C97AC04}"
+      DTS:ObjectName="LocalHost.SQL1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=.;User ID=sa;Initial Catalog=SQL1;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMYi/rr8wqk6vtKCH0KEzpwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAXm55EdG8q+gI0PcGjPb6JAAAAAASAAACgAAAAEAAAAIfgi9+A7bYYjTlNuAFe5tYYAAAA4Q8/SUtRbe/JAJImMYv1jq9C+9eayQXKFAAAACtGUkhgyE0EvtJHVyK6zgv4oGe1</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=.;Initial Catalog=SQL1;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Location]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{DECFEEEF-E49A-4213-96EC-4647EF8B1C63}"
+      DTS:DTSID="{98B877E1-AFC5-4A44-9F11-723B716D147D}"
       DTS:ObjectName="Location">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -277,7 +272,7 @@
               DTS:DataType="17"
               DTS:TextQualified="True"
               DTS:ObjectName="LocationID"
-              DTS:DTSID="{37F41DAC-9C09-424D-80D7-434AA46DBD2B}"
+              DTS:DTSID="{B5C3FEA0-0CFD-4337-9779-71ECE9C648D9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -286,7 +281,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Name"
-              DTS:DTSID="{C3EBBD7C-B1C0-4586-81B3-6C920657C844}"
+              DTS:DTSID="{85BA02A1-E675-4882-B116-1FA144F364CC}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -295,7 +290,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[OrderStatus]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{9EC792EC-1CCB-42AD-972E-1450A19E48CE}"
+      DTS:DTSID="{9F4EDBBE-AC6E-4A8C-BBC1-40D9BC63731D}"
       DTS:ObjectName="OrderStatus">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -314,7 +309,7 @@
               DTS:DataType="17"
               DTS:TextQualified="True"
               DTS:ObjectName="OrderStatusID"
-              DTS:DTSID="{830912B8-6E8F-4C04-9EBF-854511D4D2D1}"
+              DTS:DTSID="{12B6C084-D3E8-4C82-A51A-A0880CC2CF4E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -323,7 +318,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Name"
-              DTS:DTSID="{F86AC627-8E1D-4F71-BEC7-2A4416049A7A}"
+              DTS:DTSID="{B9DC8238-4011-47E5-87BE-D1907E3A3C6D}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -332,7 +327,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Package]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{6155EE2D-B29B-49D7-910E-6AF1EB713649}"
+      DTS:DTSID="{2CEB5FA6-3A98-41C2-88D3-1C0D18BDC63B}"
       DTS:ObjectName="Package">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -351,7 +346,7 @@
               DTS:DataType="17"
               DTS:TextQualified="True"
               DTS:ObjectName="PackageID"
-              DTS:DTSID="{CC19F991-937D-4279-B24D-B00832F2FC50}"
+              DTS:DTSID="{710B1BBC-C7C9-4D54-BB81-5689E5EE9454}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -360,7 +355,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Name"
-              DTS:DTSID="{F85A1FCE-3F56-491D-A8EE-7BB5874E2E2D}"
+              DTS:DTSID="{BFD3A21E-DC16-4F30-A0D4-697D37AA1DCD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -368,7 +363,7 @@
               DTS:DataType="6"
               DTS:TextQualified="True"
               DTS:ObjectName="UnitPrice"
-              DTS:DTSID="{7DF5C81B-6FC8-4809-B949-6494977D2105}"
+              DTS:DTSID="{CA09DCAB-5E03-432D-92BC-21A599BDB33D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -377,7 +372,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Note"
-              DTS:DTSID="{055801E4-FB55-4DBD-AB44-46B306F8274F}"
+              DTS:DTSID="{6ABBA730-37DC-41AD-89AD-051FDD04381E}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -390,7 +385,7 @@
       DTS:refId="Package\Create FKs"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{F9349723-CC39-483E-9D2B-F782F3DEBF43}"
+      DTS:DTSID="{D6A0C7C4-2F0A-4E9B-BB79-D71A73BE1F6F}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Create FKs"
@@ -399,7 +394,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B64B3EE3-9093-4338-B70E-46EA72FA7B4A}"
+          SQLTask:Connection="{D389F7BF-BB2C-4EAF-BB2C-FD5B1C97AC04}"
           SQLTask:SqlStatementSource="EXEC Zagros.CreateFKs;&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -407,7 +402,7 @@
       DTS:refId="Package\Drop FKs &amp; Truncate Tables"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{07899F6C-6F27-46EC-90DE-B732A1098AF0}"
+      DTS:DTSID="{8DCDE563-D258-449F-93D7-DBD6018C86CE}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Drop FKs &amp; Truncate Tables"
@@ -416,7 +411,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B64B3EE3-9093-4338-B70E-46EA72FA7B4A}"
+          SQLTask:Connection="{D389F7BF-BB2C-4EAF-BB2C-FD5B1C97AC04}"
           SQLTask:SqlStatementSource="EXEC Zagros.DropFKs;&#xA;GO&#xA;TRUNCATE TABLE Zagros.Country;&#xA;GO&#xA;TRUNCATE TABLE Zagros.Customer;&#xA;GO&#xA;TRUNCATE TABLE Zagros.CustomerOrder;&#xA;GO&#xA;TRUNCATE TABLE Zagros.Location;&#xA;GO&#xA;TRUNCATE TABLE Zagros.OrderStatus;&#xA;GO&#xA;TRUNCATE TABLE Zagros.Package;&#xA;GO&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -424,7 +419,7 @@
       DTS:refId="Package\Import From CSV"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{E824A46D-5284-4408-8B40-B6B203922FB6}"
+      DTS:DTSID="{8DA162C4-CEFC-4C4F-82C9-BEAAFA37F85D}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Import From CSV"
@@ -459,7 +454,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -493,8 +488,8 @@
               <connections>
                 <connection
                   refId="Package\Import From CSV\Country.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.SQL1.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.SQL1.sa]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.SQL1]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.SQL1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -699,7 +694,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -733,8 +728,8 @@
               <connections>
                 <connection
                   refId="Package\Import From CSV\Customer.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.SQL1.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.SQL1.sa]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.SQL1]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.SQL1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1277,7 +1272,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1311,8 +1306,8 @@
               <connections>
                 <connection
                   refId="Package\Import From CSV\CustomerOrder.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.SQL1.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.SQL1.sa]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.SQL1]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.SQL1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1657,7 +1652,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1691,8 +1686,8 @@
               <connections>
                 <connection
                   refId="Package\Import From CSV\Location.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.SQL1.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.SQL1.sa]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.SQL1]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.SQL1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1897,7 +1892,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1931,8 +1926,8 @@
               <connections>
                 <connection
                   refId="Package\Import From CSV\OrderStatus.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.SQL1.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.SQL1.sa]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.SQL1]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.SQL1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2137,7 +2132,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2171,8 +2166,8 @@
               <connections>
                 <connection
                   refId="Package\Import From CSV\Package.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.SQL1.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.SQL1.sa]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.SQL1]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.SQL1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2469,7 +2464,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{AF8F40FA-75D9-4374-9394-721893172DA0}"
+      DTS:DTSID="{0FE2DADA-09D5-4937-9684-3941BED47ECF}"
       DTS:From="Package\Drop FKs &amp; Truncate Tables"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -2477,7 +2472,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{107E972C-F326-4AB0-9EA5-5D482D48ECDE}"
+      DTS:DTSID="{2DB6BDAD-EBCB-4C3D-A20D-EDD39105144F}"
       DTS:From="Package\Import From CSV"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
@@ -2500,13 +2495,13 @@
           Id="Package\Create FKs"
           TopLeft="277.499995864928,254.5263205803" />
         <NodeLayout
-          Size="162.666666666667,42.6666666666667"
-          Id="Package\Import From CSV"
-          TopLeft="269.374995986,142.315792152426" />
-        <NodeLayout
           Size="158,54"
           Id="Package\Drop FKs &amp; Truncate Tables"
           TopLeft="273.124995930121,44.4736850476331" />
+        <NodeLayout
+          Size="162.666666666667,42.6666666666667"
+          Id="Package\Import From CSV"
+          TopLeft="269.374995986,142.315792152426" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="351.416662624727,98.4736850476331">
@@ -2558,7 +2553,7 @@
     design-time-name="Package\Import From CSV">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="145.333333333334,42.6666666666667"
           Id="Package\Import From CSV\Package CSV"
@@ -2626,7 +2621,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -2648,7 +2645,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -2670,7 +2669,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -2692,7 +2693,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -2714,7 +2717,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -2736,7 +2741,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
