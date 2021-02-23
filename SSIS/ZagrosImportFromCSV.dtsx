@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="ZagrosImportFromCSV"
   DTS:PackageType="5"
-  DTS:VersionBuild="69"
-  DTS:VersionGUID="{4988E7A1-9A41-40D3-B809-2AF020E222F1}">
+  DTS:VersionBuild="70"
+  DTS:VersionGUID="{CC20D6BE-851D-4DC9-8113-914FE6F7FB19}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -241,10 +241,10 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[LocalHost.SQL1]"
+      DTS:refId="Package.ConnectionManagers[DB_Connection]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{D389F7BF-BB2C-4EAF-BB2C-FD5B1C97AC04}"
-      DTS:ObjectName="LocalHost.SQL1">
+      DTS:ObjectName="DB_Connection">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=.;Initial Catalog=SQL1;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
@@ -488,8 +488,8 @@
               <connections>
                 <connection
                   refId="Package\Import From CSV\Country.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.SQL1]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.SQL1]"
+                  connectionManagerID="Package.ConnectionManagers[DB_Connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[DB_Connection]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -728,8 +728,8 @@
               <connections>
                 <connection
                   refId="Package\Import From CSV\Customer.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.SQL1]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.SQL1]"
+                  connectionManagerID="Package.ConnectionManagers[DB_Connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[DB_Connection]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1306,8 +1306,8 @@
               <connections>
                 <connection
                   refId="Package\Import From CSV\CustomerOrder.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.SQL1]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.SQL1]"
+                  connectionManagerID="Package.ConnectionManagers[DB_Connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[DB_Connection]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1686,8 +1686,8 @@
               <connections>
                 <connection
                   refId="Package\Import From CSV\Location.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.SQL1]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.SQL1]"
+                  connectionManagerID="Package.ConnectionManagers[DB_Connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[DB_Connection]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1926,8 +1926,8 @@
               <connections>
                 <connection
                   refId="Package\Import From CSV\OrderStatus.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.SQL1]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.SQL1]"
+                  connectionManagerID="Package.ConnectionManagers[DB_Connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[DB_Connection]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2166,8 +2166,8 @@
               <connections>
                 <connection
                   refId="Package\Import From CSV\Package.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.SQL1]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.SQL1]"
+                  connectionManagerID="Package.ConnectionManagers[DB_Connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[DB_Connection]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="23"
-  DTS:VersionGUID="{DE7AF4EB-0EF4-4C7C-B4E4-6C707FE92820}">
+  DTS:VersionBuild="24"
+  DTS:VersionGUID="{9BF68BFB-A256-42A3-953F-33A3FC0C0778}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -129,10 +129,10 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[LocalHost.SQL1]"
+      DTS:refId="Package.ConnectionManagers[DB_Connection]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{2B89FC14-2980-4AA8-8242-FEBC52EC22CA}"
-      DTS:ObjectName="LocalHost.SQL1">
+      DTS:ObjectName="DB_Connection">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=.;Initial Catalog=SQL1;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />

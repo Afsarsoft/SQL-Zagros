@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="BuildZagrosDBAzure"
   DTS:PackageType="5"
-  DTS:VersionBuild="25"
-  DTS:VersionGUID="{87E55B20-F2B7-4B77-B3A7-6CE1CE15AD69}">
+  DTS:VersionBuild="26"
+  DTS:VersionGUID="{439E27A3-8D15-44F6-9304-F295A254D8F4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -107,17 +107,17 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[afsarsoft.database.windows.net.SQL1]"
+      DTS:refId="Package.ConnectionManagers[AzureDB_Connection]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{A59E6BC1-A6FB-492E-8637-E6201B733F8B}"
-      DTS:ObjectName="afsarsoft.database.windows.net.SQL1">
+      DTS:ObjectName="AzureDB_Connection">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=afsarsoft.database.windows.net;User ID=azuresa;Initial Catalog=SQL1;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMYi/rr8wqk6vtKCH0KEzpwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAbrPhcURADSR+T0pMGdZTnAAAAAASAAACgAAAAEAAAAFALpfgwm+6E2L6vj3SYbFMYAAAA5s56gbm++uJ3oTeGAFIqSpejg1s2kTO+FAAAAMvpDBdj4HowTMOuyLaoMlGJqoCa</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMYi/rr8wqk6vtKCH0KEzpwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADevBSbmMXoDC2JguJhhk8fAAAAAASAAACgAAAAEAAAAANL9qXWENLaAL5N6PbEaFMYAAAAntTwK8Nt8M2s4Yy8ujiQyBCCY3KS21fZFAAAAP+qdnxvQsF+7VUqWfJqW3NxSU1I</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>

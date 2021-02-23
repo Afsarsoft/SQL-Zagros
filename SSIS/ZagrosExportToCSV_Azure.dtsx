@@ -11,23 +11,23 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="ZagrosExportToCSV_Azure"
   DTS:PackageType="5"
-  DTS:VersionBuild="18"
-  DTS:VersionGUID="{2FC8A5AE-3DEF-41D7-B44F-98814CB1AF64}">
+  DTS:VersionBuild="19"
+  DTS:VersionGUID="{E3A31E23-0A37-4D22-A6B6-0F8F91702601}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[afsarsoft.database.windows.net.SQL1]"
+      DTS:refId="Package.ConnectionManagers[AzureDB_Connection]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{039A5375-EF20-4D0D-AE8A-4FC227C39BDF}"
-      DTS:ObjectName="afsarsoft.database.windows.net.SQL1">
+      DTS:ObjectName="AzureDB_Connection">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=afsarsoft.database.windows.net;User ID=azuresa;Initial Catalog=SQL1;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMYi/rr8wqk6vtKCH0KEzpwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACCc9tAc8k109jLCyxfu+AqAAAAAASAAACgAAAAEAAAANkbCSBOHVRkVFMFin4q8pEYAAAAKsWd+FlfmLTYjF5CWqLJv8nU8N3c7zdgFAAAAPjdqg1+JXZIU2XCLiTve+9RK4lT</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMYi/rr8wqk6vtKCH0KEzpwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAhDh/44pFVU5fDBMJZSgdPAAAAAASAAACgAAAAEAAAAHVm20OstmxyVLyHq5Wz7hsYAAAAm7UB0yHmn18sWNgkF1fbRQn/0SCRFSXhFAAAAC2WtcFbX4XHNSXfklSVwf56udVG</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -451,8 +451,8 @@
               <connections>
                 <connection
                   refId="Package\Export To CSV\Country.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[afsarsoft.database.windows.net.SQL1]"
-                  connectionManagerRefId="Package.ConnectionManagers[afsarsoft.database.windows.net.SQL1]"
+                  connectionManagerID="Package.ConnectionManagers[AzureDB_Connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[AzureDB_Connection]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -642,8 +642,8 @@
               <connections>
                 <connection
                   refId="Package\Export To CSV\Customer.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[afsarsoft.database.windows.net.SQL1]"
-                  connectionManagerRefId="Package.ConnectionManagers[afsarsoft.database.windows.net.SQL1]"
+                  connectionManagerID="Package.ConnectionManagers[AzureDB_Connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[AzureDB_Connection]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1125,8 +1125,8 @@
               <connections>
                 <connection
                   refId="Package\Export To CSV\CustomerOrder.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[afsarsoft.database.windows.net.SQL1]"
-                  connectionManagerRefId="Package.ConnectionManagers[afsarsoft.database.windows.net.SQL1]"
+                  connectionManagerID="Package.ConnectionManagers[AzureDB_Connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[AzureDB_Connection]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1433,8 +1433,8 @@
               <connections>
                 <connection
                   refId="Package\Export To CSV\Location.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[afsarsoft.database.windows.net.SQL1]"
-                  connectionManagerRefId="Package.ConnectionManagers[afsarsoft.database.windows.net.SQL1]"
+                  connectionManagerID="Package.ConnectionManagers[AzureDB_Connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[AzureDB_Connection]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1624,8 +1624,8 @@
               <connections>
                 <connection
                   refId="Package\Export To CSV\OrderStatus.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[afsarsoft.database.windows.net.SQL1]"
-                  connectionManagerRefId="Package.ConnectionManagers[afsarsoft.database.windows.net.SQL1]"
+                  connectionManagerID="Package.ConnectionManagers[AzureDB_Connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[AzureDB_Connection]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1815,8 +1815,8 @@
               <connections>
                 <connection
                   refId="Package\Export To CSV\Package.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[afsarsoft.database.windows.net.SQL1]"
-                  connectionManagerRefId="Package.ConnectionManagers[afsarsoft.database.windows.net.SQL1]"
+                  connectionManagerID="Package.ConnectionManagers[AzureDB_Connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[AzureDB_Connection]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
