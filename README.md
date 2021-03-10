@@ -10,9 +10,9 @@ A sample SQL OLTP database for a fictional travel agency. <br />
 1- In a new or existing SQL DB or Azure SQL DB, from "Script1" folder, install script CreateSchema.sql <br />
 2- From "SP" folder install all SPs (ignore any warnings) <br />
 3- From "Script2" folder, run all scripts starting with 01_% to 09_% <br />
+4- From "View" folder install all Views <br />
 
 # Automated Installation 
 1- Create a folder "C:\zagros" <br />
-2- Copy folders "Script1", "Script2" and "SP" in folder "C:\zagros" <br />
-3- For SQL DB, change connection "DB_Connection" according to your environment and Run SSIS package BuildZagrosDB <br />
-3- For Azure SQL DB, change connection "AzureDB_Connection" according to your environment and Run SSIS package BuildZagrosDBAzure <br />
+2- Copy folders "Script1", "Script2", "SP", and "View" in folder "C:\zagros" <br />
+3- For SQL DB, change connection "DB_Connection" according to your environment and Run SSIS package ZagrosBuild <br />

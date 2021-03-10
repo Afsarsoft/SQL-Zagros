@@ -264,8 +264,7 @@ BEGIN
 END
 
 SET @ErrorText = 'Failed Calling SP UpdateOrder!';
-EXEC Zagros.UpdateOrder @OrderID = @OrderID,
-                        @TotalAmount = @TotalTotalAmount
+EXEC Zagros.UpdateOrder @OrderID = @OrderID
 SET @Message = 'Completed UPDATE the Order for Total Amount.';
 RAISERROR (@Message, 0,1) WITH NOWAIT;
 EXEC Zagros.InsertHistory @SP = @SP,
